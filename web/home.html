@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17251c">
+  <meta name="description" content="Discover cricket talent and find the right fit for your team with VIXISU.">
+  <title>VIXISU | Cricket Intelligence</title>
+  <link rel="icon" href="/assets/mark.svg">
+  <link rel="stylesheet" href="/assets/entrance.css">
+  <script src="/assets/entrance.js" defer></script>
+</head>
+<body>
+  <header class="mast">
+    <a class="brand" href="/home">VIXISU<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="#posters">Player posters</a><a href="/scout">Scouting Room</a><a href="/">Workspace</a></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="label">CRICKET INTELLIGENCE</p>
+        <h1 id="hero-title">TALENT IS<br>EVERYWHERE.<br><em>FIND THE RIGHT FIT.</em></h1>
+        <p>Discover real players, compare match evidence, and see who fits the role your squad needs.</p>
+        <a class="action" href="/scout">Enter the Scouting Room</a>
+      </div>
+      <a class="credit" href="#credits">Australia vs South Africa · Talisen</a>
+    </section>
+    <section class="collection" id="posters" aria-labelledby="collection-title">
+      <div class="collection-head"><div><p class="label">FEATURED PLAYERS</p><h2 id="collection-title">THE PLAYER POSTERS</h2></div>
+        <div class="actions" id="poster-controls" hidden><button type="button" id="prev">Previous</button><button type="button" id="next">Next</button><button type="button" id="layout" aria-pressed="false">Grid view</button></div>
+      </div>
+      <div class="rail" id="rail" tabindex="0" aria-label="Player poster carousel">
+        <a class="poster" href="/scout?player=ba607b88" data-index="0">
+          <img src="/assets/photos/kohli-ink.webp" alt="Virat Kohli batting" loading="lazy">
+          <span class="poster-meta"><span class="label">01 / BATTER</span><strong>Virat Kohli</strong></span>
+        </a>
+        <a class="poster" href="/scout?player=462411b3" data-index="1">
+          <img src="/assets/photos/bumrah-ink.webp" alt="Jasprit Bumrah" loading="lazy">
+          <span class="poster-meta"><span class="label">02 / BOWLER</span><strong>Jasprit Bumrah</strong></span>
+        </a>
+        <a class="poster" href="/scout?player=be150fc8" data-index="2">
+          <img src="/assets/photos/perry-ink.webp" alt="Ellyse Perry batting" loading="lazy">
+          <span class="poster-meta"><span class="label">03 / ALL-ROUNDER</span><strong>Ellyse Perry</strong></span>
+        </a>
+      </div>
+    </section>
+    <section class="doorway" aria-labelledby="scouting-title">
+      <div><p class="label">SCOUTING WORKSPACE</p><h2 id="scouting-title">BUILD A<br>BETTER TEAM.</h2>
+        <p>Scope a competition and season, compare candidates, and test your recruitment priorities in the Decision Lab.</p>
+        <a class="action" href="/scout">Open the Scouting Room</a></div>
+      <div class="locker" aria-hidden="true"><div class="locker-room"><span>V.</span></div><div class="locker-door"><i></i></div></div>
+    </section>
+    <footer id="credits">
+      <h2>Photography credits</h2>
+      <p>The player posters use color reduction and halftone treatment on licensed photography.</p>
+      <ul>
+        <li>Australia vs South Africa, Talisen <a href="https://commons.wikimedia.org/wiki/File:Australia_vs_South_Africa.jpg">Photograph</a> · <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></li>
+        <li>Virat Kohli batting 2013, Dee03 <a href="https://commons.wikimedia.org/wiki/File:Virat_Kohli_batting_2013.jpg">Photograph</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+        <li>Jasprit Bumrah (4), CRICKETNEXT <a href="https://commons.wikimedia.org/wiki/File:Jasprit_Bumrah_(4).jpg">Photograph</a> · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></li>
+        <li>Ellyse Perry WTest 2017–18, Ianblair23 <a href="https://commons.wikimedia.org/wiki/File:Ellyse_Perry_WTest_2017%E2%80%9318.jpg">Photograph</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+      </ul>
+    </footer>
+  </main>
+  <dialog id="artwork" aria-labelledby="artwork-title">
+    <header><h2 id="artwork-title"></h2><button type="button" id="close-artwork">Close</button></header>
+    <figure><img id="artwork-image" alt=""><figcaption><a id="original-photo">View original photograph</a></figcaption></figure>
+    <a class="action" id="open-profile">View scouting profile</a>
+  </dialog>
+</body>
+</html>

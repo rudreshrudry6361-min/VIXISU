@@ -1,0 +1,7 @@
+{
+  "name": "vixisu-cricket-demo",
+  "private": true,
+  "scripts": {
+    "start": "python -m uvicorn app.main:app"
+  }
+}

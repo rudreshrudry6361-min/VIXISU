@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.db
+uploads/*
+outputs/*
+!uploads/.gitkeep
+!outputs/.gitkeep
+.env
+.DS_Store
+
+*.db-shm
+*.db-wal
+*.db-journal
+all_json.zip
+demo_backup/

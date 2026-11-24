@@ -1,0 +1,11 @@
+services:
+  vixisu:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./data:/srv/vixisu/data
+    environment:
+      - VIXISU_DB_PATH=/srv/vixisu/data/vixisu.db
+      - VIXISU_OWNER_TOKEN=${VIXISU_OWNER_TOKEN:-}
+    restart: unless-stopped

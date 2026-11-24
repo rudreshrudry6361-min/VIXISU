@@ -1,0 +1,4 @@
+# Optional: install for higher-quality video person detection.
+# Download an appropriately licensed YOLO weights file separately and set VIXISU_YOLO_WEIGHTS.
+ultralytics>=8.3
+lap>=0.5.12
